@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" id="navbar-brand" href="#">
+                        <i class="fab fa-instagram"></i>
+                        Instagram
+                    </a>
+                    <!-- Button nuevo post -->
+                    <div>
+                        <button type="button" class="btn btn-primary bg-success border-0" data-toggle="modal" data-target="#exampleModal">
+                            Create a new post
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <textarea class="form-control" id="exampleModalLabel"></textarea> 
+                                        <button type="button" class="btn btn-light btn-sm mt-2"><i class="fas fa-camera"></i></button> 
+                                        <button type="button" class="btn btn-light btn-sm mt-2"><i class="fas fa-map-marker-alt"></i></button>                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-primary">Publish</button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-------------setting -->
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                                <a class="dropdown-item" href="#">Action 3</a>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                   
+                        </div>
+                    </div>
+                </nav>
+                    <!----- contenido--->
+                <nav>
+                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-th-large"></i></a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-stop"></i></a>
+                </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                     <!----- vista 1 --->
+                    <!----- fila 1 --->
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://i.pinimg.com/originals/38/ce/f5/38cef5e6e15fc9f81dd19cda0eac581a.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://international-experience.es/wp-content/uploads/2019/08/comidas-mundo.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://content.skyscnr.com/m/6a67db0e3d859594/original/eyeem_69444284-jpg.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                </div>
+                     <!----- fila2  --->
+                <div class="row">
+                    <div class="col-4 mh-100">
+                        <img src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4 mh-100">
+                        <img src="https://www.clinicavespucio.cl/wp-content/uploads/2016/01/Conozca-los-beneficios-de-consumir-frutas-de-verano_.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4 mh-100">
+                        <img src="https://i.pinimg.com/originals/c4/76/27/c476278504682e622fabe9b0932098c3.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                </div>
+                    <!----- fila 3  --->
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://cadenaser00.epimg.net/ser/imagenes/2020/10/13/sociedad/1602586705_151369_1602587371_noticia_normal.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4 mh-100">
+                        <img src="https://www.elcomercio.com/files/article_main/uploads/2015/02/10/54dab30b75894.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://red-viajes.com/wp-content/uploads/2019/09/datos-curiosos-sobre-francia.jpg" class="img-fluid p-0 m-0 rounded-0 img-thumbnail w-100 h-100" alt="Responsive image">
+                    </div>
+                </div>
+                <!----- Fin filas  --->
+                </div>
+                 <!----- vista 2 --->
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <!----- foto 1 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My First Photo <span class="card-text"><small class="text-muted float-right">12/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://i.pinimg.com/originals/38/ce/f5/38cef5e6e15fc9f81dd19cda0eac581a.jpg" alt="Card image cap">
+                            <p class="card-text">23 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 2 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Second Photo <span class="card-text"><small class="text-muted float-right">11/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://international-experience.es/wp-content/uploads/2019/08/comidas-mundo.jpg" alt="Card image cap">
+                            <p class="card-text">30 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 3 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">10/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://content.skyscnr.com/m/6a67db0e3d859594/original/eyeem_69444284-jpg.jpg" alt="Card image cap">
+                            <p class="card-text">18 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 4 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">09/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://www.dzoom.org.es/wp-content/uploads/2017/07/seebensee-2384369-810x540.jpg" alt="Card image cap">
+                            <p class="card-text">27 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <!----- foto 5 --->
+                 <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">08/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://www.clinicavespucio.cl/wp-content/uploads/2016/01/Conozca-los-beneficios-de-consumir-frutas-de-verano_.jpg" alt="Card image cap">
+                            <p class="card-text">05 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 6 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">07/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://i.pinimg.com/originals/c4/76/27/c476278504682e622fabe9b0932098c3.jpg" alt="Card image cap">
+                            <p class="card-text">48 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 7 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">06/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://cadenaser00.epimg.net/ser/imagenes/2020/10/13/sociedad/1602586705_151369_1602587371_noticia_normal.jpg" alt="Card image cap">
+                            <p class="card-text">31 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 8 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">05/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://www.elcomercio.com/files/article_main/uploads/2015/02/10/54dab30b75894.jpg" alt="Card image cap">
+                            <p class="card-text">23 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!----- foto 9 --->
+                <div class="row w-50 p-3 m-auto">
+                    <div class="col-12">
+                    <div class="card mb-3">
+                        <h5 class="card-title pl-3 pt-3">My Photo <span class="card-text"><small class="text-muted float-right">04/14</small> </span></h5> 
+                        <div class="card-body">
+                            <img class="card-img-top" src="https://red-viajes.com/wp-content/uploads/2019/09/datos-curiosos-sobre-francia.jpg" alt="Card image cap">
+                            <p class="card-text">16 Likes</p>
+                            <p class="card-text">This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong></p>
+                            <p class="card-text"><span class="text-muted"><i class="far fa-heart"></i> Coment... <small class="text-muted float-right"><i class="fas fa-ellipsis-v"></i></small></span></p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                
+                
+                
+                
+                
+                
+
+
+
+
+
+
+
+                 
+                
+                
+
+
+
+
+
+
+
+
+
+
+                <!----- foto 9 --->
+                <!----- fin vista 2 --->
+                </div>
+                </div>
+                      <!----- fin contenido---->    
+            </div>
+        </div>
+</body>
+
+</html>
+
+
+
+
+                
